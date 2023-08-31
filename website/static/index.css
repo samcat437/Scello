@@ -3,9 +3,12 @@ a.navbar-brand {
     font-size: 5rem;
 }
 
-.nav-item {
+.nav-item, h1 {
     font-family: 'Londrina Solid', cursive;
     padding-left: 10%;
     font-size: 1.5rem;
 }
 
+.home-about {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
