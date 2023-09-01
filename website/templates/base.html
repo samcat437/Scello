@@ -65,8 +65,8 @@
         emailjs.init("T2EI9Q6Fwg6w9xyo0");
     })();
 
-    var serviceID = "";
-    var templateID = "";
+    var serviceID = "service_qln82cb";
+    var templateID = "template_ufpgyh8";
 
     var params = {
         senderfirst_name: document.querySelector("#first_name").value,
@@ -78,6 +78,13 @@
         end_time: document.querySelector("#end_time").value,
         message: document.querySelector("#event_content").value
     };
+
+    emailjs.send(serviceID, templateID, params)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 </script>
 {% endblock %}
 
