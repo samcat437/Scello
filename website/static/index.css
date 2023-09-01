@@ -3,7 +3,7 @@ a.navbar-brand {
     font-size: 5rem;
 }
 
-.nav-item, h1, .submit {
+.nav-item, h1 {
     font-family: 'Londrina Solid', cursive;
     padding-left: 10%;
     font-size: 1.5rem;
@@ -13,6 +13,9 @@ a.navbar-brand {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.submit {
+    font-family: 'Londrina Solid', cursive;
+}
 @media only screen and (max-width: 500px) {
     a.navbar-brand {
       font-size: 1.5rem;

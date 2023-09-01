@@ -54,9 +54,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 {% block javascript %}
-    <script type="text/javascript"
+<script type="text/javascript"
     src="{{ url_for('static', filename='index.js') }}">
-    </script>
+</script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("T2EI9Q6Fwg6w9xyo0");
+    })();
+
+    var serviceID = "";
+    var templateID = "";
+
+    var params = {
+        senderfirst_name: document.querySelector("#first_name").value,
+        senderlast_name: document.querySelector("#last_name").value,
+        senderemail: document.querySelector("#email").value,
+        wedding_date: document.querySelector("#wedding_date").value,
+        venue: document.querySelector("#venue").value,
+        start_time: document.querySelector("#start_time").value,
+        end_time: document.querySelector("#end_time").value,
+        message: document.querySelector("#event_content").value
+    };
+</script>
 {% endblock %}
+
   </body>
 </html>
