@@ -12,3 +12,9 @@ a.navbar-brand {
 .home-about, .teaching-about, .weddings-about, .contact-us {
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
+@media only screen and (max-width: 500px) {
+    a.navbar-brand {
+      font-size: 1.5rem;
+    }
+  }
