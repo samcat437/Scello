@@ -3,12 +3,12 @@ a.navbar-brand {
     font-size: 5rem;
 }
 
-.nav-item, h1 {
+.nav-item, h1, .submit {
     font-family: 'Londrina Solid', cursive;
     padding-left: 10%;
     font-size: 1.5rem;
 }
 
-.home-about, .teaching-about, .weddings-about {
+.home-about, .teaching-about, .weddings-about, .contact-us {
     font-family: 'PT Sans Narrow', sans-serif;
 }
