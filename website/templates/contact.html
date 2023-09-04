@@ -5,7 +5,7 @@
     <div class="row position-relative">
         <div class="col-6 position-absolute top-0 start-50 translate-middle-x">
             
-            <form class="contact-us" method="POST">
+            <form class="contact-us" id="contact-form">
                 <h1 class="p-0">Contact</h1>
                 <div class="input-field mb-3">
                     <label for="first_name" class="form-label">First Name</label>
@@ -59,7 +59,7 @@
                         required></textarea>
                 </div>
 
-                <button type="submit" class="mb-3 btn btn-primary submit">Submit</button>
+                <button onclick="sendEmail()" type="submit" value="Send" class="mb-3 btn btn-primary submit">Submit</button>
               </form>
         </div>
     </div>
