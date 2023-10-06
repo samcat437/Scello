@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block title %}Contact{% endblock %}
-{% block content%}
+{% block content %}
 
 <div class="container">
     <div class="row position-relative">
         <div class="col-12 col-md-6 position-absolute top-0 start-50 translate-middle-x my-5">
             
             <form class="contact-us" id="contact-form">
-                <h1 class="p-0">Contact</h1>
+               
                 <div class="input-field mb-3">
                     <label for="first_name" class="form-label">First Name</label>
                     <input id="first_name" name="first_name" minlength="3" maxlength="25" type="text"
@@ -58,8 +58,11 @@
                     <textarea id="event_content" name="event_content" class="form-control"
                         required></textarea>
                 </div>
+                <div class="col position-relative d-flex submit justify-content-center mt-4">
+                    
+                    <a onclick="sendEmail()" type="submit" value="Send" class="mb-3 btn btn-primary" role="button">Submit</a>
+                </div>
 
-                <button onclick="sendEmail()" type="submit" value="Send" class="mb-3 btn btn-primary submit">Submit</button>
               </form>
         </div>
     </div>

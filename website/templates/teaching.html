@@ -3,61 +3,56 @@
 
 <div class="container-fluid">
     <section>
-        <div class="row">
-            
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col teaching-about">
+        <div class="row pt-5">
+            <div class="col-lg-6 teaching-about">
                 <p>Samantha loves teaching the cello and has many years of experience. She is enthusiastic about teaching the next generation of musicians. She first began as an undergraduate student at the Baldwin Wallace Conservatory Outreach program. She delved into pedagogy during her time as an English teacher assistant in a primary school in France in 2016-2017.</p>
                 <p>When she returned home to the States following her Master’s studies, Samantha jumped into teaching as a substitute at the Aurora School of Music. She adapted to each students' needs. She was able to quickly hone into their strengths and weaknesses and provide a fresh perspective to supplement their weekly tuition.</p>
                 <p>She worked teaching a small studio at the Hudson Montessori School Conservatory. During this time she was able to solidify her teaching philosophy and methods.  During the pandemic, she transitioned to remote teaching through Zoom and Google Meets. Since then, she still teaches often online and is able to provide education to students in locations where there are no in-person lessons available. She has a healthy studio based in Cardiff and provides performance opportunities at a local church in Roath per term.</p>
                 <p>Samantha teaches students of all ages and abilities. She teaches beginners through a mix of teaching styles based on the Suzuki method and from her own experience as a cellist. This method allows the student to play the instrument in the very first lesson and builds a solid technical foundation from the beginning. When meeting a student with a background, she reinforces the basics of technique as they never stop being relevant. Her approach is positive and supportive. She prepares students for the ABRSM exams if desired, although her teaching focus is on a holistic approach to musicianship—ear training, theory, technique, bow control and distribution, listening for sound and above all, personal enjoyment.</p>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="row position-relative">
-            <div class="col-md-6 mb-md-4 teaching-img"></div>
-            <div class="col-md-6 position-absolute top-0 start-50 translate-middle-x my-5">
+            <div class="col-lg-6">
                 
-                <form class="contact-us" id="contact-form">
-                    <h1 class="pb-3 mx-auto">Interested in taking lessons? Let me know!</h1>
-                    <div class="input-field mb-3">
-                        <label for="first_name" class="form-label">First Name</label>
-                        <input id="first_name" name="first_name" minlength="3" maxlength="25" type="text"
-                            class="validate form-control" autocomplete="on">
-                    </div>
-    
-                    <div class="input-field mb-3">
-                        <label for="last_name" class="form-label">Last Name</label>
-                        <input id="last_name" name="last_name" type="text" minlength="3" maxlength="25"
-                            class="validate form-control" autocomplete="on">
-                    </div>
-    
-                    <div class="input-field mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-    
-                    <div class="input-field mb-3">
-                        <label for="age" class="form-label">Age</label>
-                        <input id="age" name="age" type="number" class="form-control validate"
-                            required>
-                    </div>
-                    
-                    <div class="input-field mb-3">
-                        <label for="event_content">Message</label>
-                        <textarea id="event_content" name="event_content" class="form-control"
-                            required></textarea>
-                    </div>
-    
-                    <button onclick="sendEmail()" type="submit" value="Send" class="mb-3 btn btn-primary submit">Submit</button>
-                  </form>
+                <div class="my-6 pt-3 px-3 teaching-img">
+                    <h1 class="pb-3 mb-3 px-0 mx-auto">Interested in taking lessons? Let me know!</h1>
+                    <form class="contact-us" id="contact-form">
+                        
+                        <div class="input-field mb-3">
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input id="first_name" name="first_name" minlength="3" maxlength="25" type="text"
+                                class="validate form-control" autocomplete="on">
+                        </div>
+        
+                        <div class="input-field mb-3">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input id="last_name" name="last_name" type="text" minlength="3" maxlength="25"
+                                class="validate form-control" autocomplete="on">
+                        </div>
+        
+                        <div class="input-field mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+        
+                        <div class="input-field mb-3">
+                            <label for="age" class="form-label">Age</label>
+                            <input id="age" name="age" type="number" class="form-control validate"
+                                required>
+                        </div>
+                        
+                        <div class="input-field mb-3">
+                            <label for="event_content">Message</label>
+                            <textarea id="event_content" name="event_content" class="form-control"
+                                required></textarea>
+                        </div>
+                        <div class="col d-flex submit justify-content-center mt-4">
+                        
+                            <a onclick="sendEmail()" type="submit" value="Send" class="mb-3 btn btn-primary" role="button">Submit</a>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
-        </div>
     </section>
 </div>
 
