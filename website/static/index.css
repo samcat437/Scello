@@ -24,11 +24,23 @@ a.navbar-brand {
     height: 700px;
 }
 
+.wedding-img {
+    background: url("../static/images/cello-in-church.jpg") no-repeat center;
+    background-size: contain;
+    height: 700px;
+}
+
+.teaching-img {
+    background: url("../static/images/scroll.jpg") no-repeat center;
+    background-size: contain;
+    height: 700px;
+}
+
 @media only screen and (max-width: 700px) {
     a.navbar-brand {
       font-size: 1.5rem;
     }
-    .home-img {
+    .home-img, .wedding-img {
         height: 400px;
         margin-bottom: 20px;
     }
