@@ -11,13 +11,26 @@ a.navbar-brand {
 
 .home-about, .teaching-about, .weddings-about, .contact-us {
     font-family: 'PT Sans Narrow', sans-serif;
+    text-align: justify;
 }
 
 .submit {
     font-family: 'Londrina Solid', cursive;
 }
-@media only screen and (max-width: 500px) {
+
+.home-img {
+    background: url("../static/images/cellist.jpg") no-repeat center;
+    background-size: contain;
+    height: 700px;
+}
+
+@media only screen and (max-width: 700px) {
     a.navbar-brand {
       font-size: 1.5rem;
     }
-  }
+    .home-img {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+
