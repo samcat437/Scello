@@ -4,7 +4,7 @@ a.navbar-brand {
 }
 
 .nav-item, h1 {
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     padding-left: 10%;
     font-size: 1.5rem;
 }
@@ -19,8 +19,8 @@ a.navbar-brand {
 .main-info {
     background-image: url("../static/images/background-4664911.jpg");
     background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y; /* Change to repeat-y for vertical repetition */
+    background-size: auto; /* Adjust background size */
     height: 100vh;
     width: 100%;
     padding: 0;
@@ -33,8 +33,12 @@ a.navbar-brand {
     width: 100%;
 }
 
+
 .submit {
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .home-img {
